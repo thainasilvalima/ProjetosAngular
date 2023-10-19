@@ -1,32 +1,22 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 
 
-@Component({ 
+@Component({
 
-    selector:'app-first-page',
-    templateUrl: './first-page.component.html'
+    selector: 'app-first-page',
+    templateUrl: './first-page.component.html',
+    styleUrls: ['./first-page.component.css']
 
 })
 
- export class FirstPageComponent{
-   
-    btnDisabled = false;
-    name = 'teste de name'; 
-     
-    botaoClicado = false; 
+export class FirstPageComponent implements OnInit {
 
-    valores = [ {
-        nome: 'nome'
+    constructor() {
 
-    }];
-
-    mostrarValor(){
-        alert(this.name);
     }
 
-    adicionar(){ this.valores.push({ nome: this.name}) }
+    ngOnInit(): void {
 
-    trocarBotao(){ this.botaoClicado = !this.botaoClicado;}
+    }
 
-    items =[{name: 'teste'}, {name: 'teste2'}] // para cada valor na variavel items, cria uma nova com o nome item  
- }
+}

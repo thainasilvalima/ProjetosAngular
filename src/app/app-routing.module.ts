@@ -1,12 +1,9 @@
 import {NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FirstPageComponent } from './pages/first-page.component';
 
 const routes: Routes = [
 
-  {
-    path: 'first-page', component: FirstPageComponent //pode-se testar a aplicação.
-  }
+  { path: '', loadChildren: () => import('./lazyload/lazyload.module').then(m => m.LazyloadModule)}
 ];
 
 @NgModule({
