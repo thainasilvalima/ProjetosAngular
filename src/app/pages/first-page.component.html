@@ -1,3 +1,6 @@
 <h1> Pagina Inicial funciona!! </h1>
 
-<router-outlet></router-outlet>
+<div class="alert" [class] ="{info: error, error:error}"> {{msg}}</div>
+
+<div style="margin-top: 15px;"> <button (click)="simuladorEnvioServidor()"> Simular envio servidor</button></div>
+

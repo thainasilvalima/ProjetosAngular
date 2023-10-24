@@ -9,14 +9,17 @@ import { Component, OnInit } from "@angular/core";
 
 })
 
-export class FirstPageComponent implements OnInit {
+export class FirstPageComponent{
 
-    constructor() {
-
-    }
-
-    ngOnInit(): void {
-
+    error = false;
+    msg = 'Serviço ainda não foi chamado';
+    simuladorEnvioServidor() {
+        this.error = !this.error;
+        if (this.error) {
+            this.msg = ' Ocorreu um error com servidor'
+        } else{
+            this.msg = ' Tudo ok com servidor'
+        }
     }
 
 }
