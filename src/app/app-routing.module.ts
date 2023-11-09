@@ -3,14 +3,18 @@ import { RouterModule, Routes } from '@angular/router';
 import { PaiPageComponent } from './pages/pai-page.component';
 import { Filho1PageComponent } from './pages/filho1-page.component';
 import { Filho2PageComponent } from './pages/filho2-page.component';
-import { FirstPageComponent } from './pages/first-page.component';
 import { ClientListPage } from './pages/client-list-page.component';
+import { RXJSPageComponent } from './pages/rxjs-page-component';
+import { OperatorExemploComponent } from './pages/operator-exemplo.component';
+import { AppComponent } from './app.component';
 import { LoginPageComponent } from './pages/login-page.component';
 
 const routes: Routes = [
-  {path: 'first-page', component: FirstPageComponent},
-  {path: 'client-list-page', component: ClientListPage },
-  {path:''},
+  {path: 'app-component', component: AppComponent},
+  {path: 'client-list-page', component: ClientListPage},
+  {path:'app-rxjs-page', component: RXJSPageComponent},
+  {path: 'app-operator-exemplo', component: OperatorExemploComponent},
+  {path: 'app-login-page', component: LoginPageComponent},
   {
     path: 'pai', component: PaiPageComponent,
     children: [

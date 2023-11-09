@@ -3,7 +3,19 @@ import { Router } from "@angular/router";
 
 @Component({
     selector:'app-login-page',
-    templateUrl:'./login-page.component.html'
+    template: `<form (ngSubmit) ="submit()"> 
+
+    <label for="username"> Username
+    </label>
+    <input type="text">
+
+    <label for="password"></label>
+    <input type="password">
+</form>
+
+<button type="submit"> </button>
+
+<router-outlet> </router-outlet>`
 })
 
 export class LoginPageComponent{

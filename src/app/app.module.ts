@@ -10,6 +10,8 @@ import { Filho2PageComponent } from './pages/filho2-page.component';
 import { PaiPageComponent } from './pages/pai-page.component';
 import { ClientListPage } from './pages/client-list-page.component';
 import { LoginPageComponent } from './pages/login-page.component';
+import { RXJSPageComponent } from './pages/rxjs-page-component';
+import { OperatorExemploComponent } from './pages/operator-exemplo.component';
 
 @NgModule({ //anotação que diz que uma classe representa um módulo.
   declarations: [ // um array contendo todas as classes que representa, componrnetes de nossa aplicação.
@@ -19,7 +21,9 @@ import { LoginPageComponent } from './pages/login-page.component';
     Filho2PageComponent,
     PaiPageComponent,
     ClientListPage,
-    LoginPageComponent
+    LoginPageComponent,
+    RXJSPageComponent,
+    OperatorExemploComponent
   ],
   imports: [ // importamos outros módulos aqui, nesse caso imporando o módulo de suporte ao navegador (BrowserModule) que sempre será importado em uma aplicação web, e o AppRoutingModule, que é um módulo que nos foi criado quando dizemos que iremos utilizar as rotas do angular.
     BrowserModule,
