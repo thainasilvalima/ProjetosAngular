@@ -8,6 +8,7 @@ import { RXJSPageComponent } from './pages/rxjs-page-component';
 import { OperatorExemploComponent } from './pages/operator-exemplo.component';
 import { AppComponent } from './app.component';
 import { LoginPageComponent } from './pages/login-page.component';
+import { ListaPessoaComponent } from './pages/lista-pessoas.component';
 
 const routes: Routes = [
   {path: 'app-component', component: AppComponent},
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path:'app-rxjs-page', component: RXJSPageComponent},
   {path: 'app-operator-exemplo', component: OperatorExemploComponent},
   {path: 'app-login-page', component: LoginPageComponent},
+  { path: 'app-lista-pessoa', component: ListaPessoaComponent},
   {
     path: 'pai', component: PaiPageComponent,
     children: [
