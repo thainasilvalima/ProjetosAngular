@@ -14,6 +14,7 @@ import { RXJSPageComponent } from './pages/rxjs-page-component';
 import { OperatorExemploComponent } from './pages/operator-exemplo.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ListaPessoaComponent } from './pages/lista-pessoas.component';
+import { UserPageComponent } from './pages/user-page.component';
 
 @NgModule({ //anotação que diz que uma classe representa um módulo.
   declarations: [ // um array contendo todas as classes que representa, componrnetes de nossa aplicação.
@@ -26,7 +27,8 @@ import { ListaPessoaComponent } from './pages/lista-pessoas.component';
     LoginPageComponent,
     RXJSPageComponent,
     OperatorExemploComponent,
-    ListaPessoaComponent
+    ListaPessoaComponent,
+    UserPageComponent
   ],
   imports: [ // importamos outros módulos aqui, nesse caso imporando o módulo de suporte ao navegador (BrowserModule) que sempre será importado em uma aplicação web, e o AppRoutingModule, que é um módulo que nos foi criado quando dizemos que iremos utilizar as rotas do angular.
     BrowserModule,

@@ -9,6 +9,9 @@ import { OperatorExemploComponent } from './pages/operator-exemplo.component';
 import { AppComponent } from './app.component';
 import { LoginPageComponent } from './pages/login-page.component';
 import { ListaPessoaComponent } from './pages/lista-pessoas.component';
+import { UserPageComponent } from './pages/user-page.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 
 const routes: Routes = [
   {path: 'app-component', component: AppComponent},
@@ -16,7 +19,9 @@ const routes: Routes = [
   {path:'app-rxjs-page', component: RXJSPageComponent},
   {path: 'app-operator-exemplo', component: OperatorExemploComponent},
   {path: 'app-login-page', component: LoginPageComponent},
-  { path: 'app-lista-pessoa', component: ListaPessoaComponent},
+  {path: 'app-lista-pessoa', component: ListaPessoaComponent},
+  {path: 'app-user-page', component: UserPageComponent},
+
   {
     path: 'pai', component: PaiPageComponent,
     children: [
@@ -28,7 +33,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule] // as rotas que criamos serão adicionadas no caminho principal da aplicação.
+  imports: [RouterModule.forRoot(routes),
+  HttpClientModule, CommonModule],
+  exports: [RouterModule],
+  providers:[] // as rotas que criamos serão adicionadas no caminho principal da aplicação.
 })
 export class AppRoutingModule { }

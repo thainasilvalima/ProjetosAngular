@@ -10,7 +10,7 @@ const routes: Routes = [
 
 
 @NgModule({
-    declarations: [FirstPageComponent],
+    declarations: [],
     imports: [
         CommonModule,
         RouterModule.forChild(routes)

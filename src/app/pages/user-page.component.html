@@ -1,0 +1,23 @@
+<h1> User Page </h1>
+
+
+<table>
+  <thead>
+    <tr>
+    <td> id </td>
+    <td> name </td>
+    <td> idade </td>
+    <td> email </td>
+    <td> </td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users | async">
+      <td>{{user.id}}</td>
+      <td>{{user.name}}</td>
+      <td>{{user.age}}</td>
+      <td>{{user.email}}</td>
+      <td> <a (click)="editar(user)">editar usuario</a></td>
+    </tr>
+  </tbody>
+</table>
