@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { User } from '../model/user';
 
-const URL = "assets/data/user.json";
+const URL = "https://gorest.co.in/public/v2/users";
 @Injectable({providedIn:'root'})
 
 export class UserService {
